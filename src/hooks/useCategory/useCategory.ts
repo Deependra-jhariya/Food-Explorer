@@ -15,7 +15,7 @@ export const useCategory = () => {
       const response = await axiosInstance.get("categories.php");
       console.log('response of category', response);
       setCategoryData(response);
-      return response.data;
+      return response;
     } catch (error: any) {
       console.log('fetch category failed', error);
     }

@@ -41,7 +41,7 @@ const DetailsScreen = () => {
             />
 
             {strTags && (
-              <AppText style={DetailsStyle.tags} text={`  Tags: ${strTags}`} />
+              <AppText style={DetailsStyle.tags} text={`Tags: ${strTags}`} />
             )}
 
             <AppText style={DetailsStyle.sectionTitle} text={'Instructions'} />

@@ -17,11 +17,7 @@ const SplashScreen = () => {
     <View style={CommonStyle.mainContainer}>
       <Image
         source={AppImages.AppIcon}
-        style={{
-          height: 300,
-          width: 300,
-          resizeMode: 'contain',
-        }}
+        style={styles.appIconStyle}
       />
     </View>
   );
@@ -34,4 +30,9 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontFamily: 'bold',
   },
+  appIconStyle:{
+    height: 300,
+    width: 300,
+    resizeMode: 'contain',
+  }
 });

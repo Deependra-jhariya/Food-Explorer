@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {
   View,
-  Text,
   FlatList,
   Image,
   TouchableOpacity,
@@ -31,10 +30,10 @@ const CategoryScreen = () => {
   const { meals: searchMeals, loading: searchLoading } =
     useMealSearch(searchText);
 
-  // 🔥 Decide which data to show
+  //Decide which data to show
   const mealsToShow = searchText.length > 0 ? searchMeals : meals;
 
-  // 🔹 Horizontal Category Item
+  //Horizontal Category Item
   const renderCategory = ({ item }: any) => {
     const isActive = item.strCategory === selectedCategory;
 
@@ -103,7 +102,7 @@ const CategoryScreen = () => {
               placeholderTextColor={AppColors.black}
             />
 
-            {/* 🔹 Horizontal Categories */}
+            {/*Horizontal Categories */}
             {searchText.length === 0 && (
               <FlatList
                 data={categoryData?.data?.categories}
@@ -114,7 +113,7 @@ const CategoryScreen = () => {
                 style={CategoryStyle.categoryList}
               />
             )}
-            {/* 🔹 Meals List */}
+            {/*Meals List */}
             <FlatList
               data={mealsToShow}
               renderItem={renderMeal}
