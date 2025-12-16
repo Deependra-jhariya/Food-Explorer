@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { CategoryScreen, DetailsScreen, SplashScreen } from '../../screens';
 
+
 const Stack = createNativeStackNavigator();
 const AllStack = () => {
   return (
